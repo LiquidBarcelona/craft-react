@@ -5,8 +5,9 @@
     "type": "craft-plugin",
     "keywords": ["react", "reactjs", "isomorphic", "twig", "craft"],
     "require": {
-      "craftcms/cms": "^3.0",
-      "limenius/react-renderer": "^2.1.0"
+      "craftcms/cms": "4.8.4",
+      "limenius/react-renderer": "^5.0.4",
+      "twig/twig": "v3.8.0"
     },
     "autoload": {
       "psr-4": {
@@ -19,5 +20,11 @@
       "name": "React for Craft",
       "developer": "Alexandre Kilian",
       "developerUrl": "https://github.com/AlexandreKilian"
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
     }
-  }
+}
